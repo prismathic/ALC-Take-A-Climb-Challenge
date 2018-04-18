@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Address Book</title>
+	<link rel="stylesheet" type="text/css" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="contacts.css">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Exo+2|Josefin+Sans|Maven+Pro|PT+Sans+Narrow|Ubuntu|Ubuntu+Condensed"
+	 rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+	<div class="left">
+	<form>
+		<fieldset>
+			<legend><h3>ADD CONTACT</h3></legend>
+			 Name:<br>
+			<input id="name" required="required"> <span class="watermelon">*</span><br><br>
+			Number:<br>
+			<input id="num"> <span class="watermelon">*</span>
+			<br>
+			<span class="infoText">Note: This field must contain a valid Nigerian number</span>
+			<span class="errorText">Error! Your number is less than 11 characters</span>
+			<span class="errorText">Error! Only numbers can be entered in this field</span>
+			<span class="errorText">Error! This field is required</span>
+			<br><br>Email:<br>
+			<input id="email" required="required"> <span class="watermelon">*</span>
+			<br>
+			<span class="errorText">Please enter a valid email address!</span>
+			<br><br>
+			
+			<!-- Your picture <input id="picture" type="file" name="" value="picture" placeholder=""><br> -->
+			<input class="submit" id="addContact" type="submit" value="Add Contact!">
+		</fieldset>
+		
+	</form>
+	</div>
+
+	<div class="middle">
+	<center>
+		<h2>JESUTOMIWA'S ADDRESS BOOK</h2>
+		<table border="1" cellspacing="30" >
+			<tbody id="main">
+				<tr>
+					<th><h3>ALL CONTACTS</h3></th>
+					<th><span class="fa fa-plus fa-2x" onClick="document.getElementById('name').focus()" title="Add Contact" style="cursor:pointer; color:#d79922"></span></th>
+				</tr>
+			</tbody>
+		</table>
+	</center>
+	</div>
+
+	<div class="right" id="update_display">
+	<form id="update_contact">
+		<fieldset>
+			<legend>
+				<h3>UPDATE CONTACT</h3>
+			</legend>
+		Name: <br>  <input id="new_name"><br><br>
+		Number:<br> <input id="new_num"><br><span class="infoText">Note: This field must contain a valid Nigerian number</span><br><br>
+		Email: <br>	<input id="new_email"><br><br><br>
+
+		<!-- Your picture <input id="picture" type="file" name="" value="picture" placeholder=""><br> -->
+		<input class="submit" id="update" type="submit" value="Update Contact Details!">
+		</fieldset>
+	</form>
+	</div>
+
+
+	<div class="modal" id="display_modal">
+		<div class="content" id="content">
+			<span id="close" class="fa fa-close" style="float:right; margin-top: -10px;"></span>
+			<p></p>
+		</div>
+	</div>
+	<script src="./functions.js" type="text/javascript"></script>
+
+</body>
+
+</html>

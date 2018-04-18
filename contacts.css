@@ -1,0 +1,124 @@
+table {
+    /* vertical-align: top; */
+    border-collapse: collapse;
+}
+th {
+    padding: 12px;
+     border-color: #f13c20
+}
+.right {
+    float: left;
+    width: 20%;
+    display: none;
+}
+.left {
+    float: left;
+    width: 23%;
+}
+.middle {
+    float: left;
+    width: 53%;
+}
+fieldset {
+    border-color: #f13c20;
+}
+input {
+    padding: 5px;
+    border-radius: 3px;
+    border: solid blue 2px;
+    width: 180px;
+    font-family: 'Maven Pro', sans-serif;
+}
+.submit {
+    padding: 5px;
+    text-align: center;
+    background-color: #f13c20;
+    width: 195px; 
+    border: solid black 2px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0);
+    background-color: rgb(0,0,0,0.4);
+}
+h2, h3 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #191970;
+}
+.content {
+    margin: 15% auto;
+    border-top: solid #f13c20 10px;
+    width: 40%;
+    background-color: #4056a1;
+    color: black;;
+    padding: 40px;
+
+}
+.delete {
+    cursor: pointer;
+     color: #f13c20
+}
+.view {
+   cursor: pointer;
+    color: #4056a1
+}
+.edit {
+    cursor: pointer;
+     color: #d79922
+}
+form {
+    font-family: 'Maven Pro', sans-serif;
+}
+ul {
+    list-style-type:none;
+}
+.contact-email {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 16px;
+    color: #4056a1
+}
+.contact-name {
+    font-family: 'Maven Pro', sans-serif; 
+    color: #191970;
+    font-size: 18px;
+}
+.contact-number {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 16px; 
+    color: #f13c20
+}
+.content p {
+    font-family: 'Maven Pro', sans-serif;
+}
+td {
+    padding: 9px;
+    border-color: #f13c20
+}
+.watermelon {
+    color: #ff3b3f
+}
+.sky-blue {
+    background-color: #cdcaf2
+}
+.neutral {
+    background-color: #efefef;
+}
+.carbon {
+    background-color: #a9a9a9
+}
+.errorText {
+    font-size: 10px;
+    color: #ff3b3f;
+    display: none;
+}
+.infoText {
+    font-size: 10px;
+    color: #ff3b3f;
+    font-style: italic;
+}
